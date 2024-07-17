@@ -105,7 +105,7 @@ open class HexColorTransform: TransformType {
 			// "Scan hex error
 			return nil
 		}
-		#if os(iOS) || os(tvOS) || os(watchOS)
+		#if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
 			return UIColor(red: red, green: green, blue: blue, alpha: alpha)
 		#else
 			return NSColor(calibratedRed: red, green: green, blue: blue, alpha: alpha)
