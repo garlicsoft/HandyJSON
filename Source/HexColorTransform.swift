@@ -6,7 +6,7 @@
 //  Copyright © 2016 hearst. All rights reserved.
 //
 
-#if os(iOS) || os(tvOS) || os(watchOS)
+#if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
 import UIKit
 #else
 import Cocoa
