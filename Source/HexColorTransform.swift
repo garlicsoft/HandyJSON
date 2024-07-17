@@ -14,7 +14,7 @@ import Cocoa
 
 open class HexColorTransform: TransformType {
 
-	#if os(iOS) || os(tvOS) || os(watchOS)
+	#if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
 	public typealias Object = UIColor
 	#else
 	public typealias Object = NSColor
